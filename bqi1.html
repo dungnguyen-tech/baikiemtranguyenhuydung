@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>baidiemtrungbinh</title>
+</head>
+<body>
+<script>
+    var toan = parseInt(prompt("nhap diem toan: "));
+    var van = parseInt(prompt("nhap diem van: "));
+    var anh = parseInt(prompt("nhap diem anh: "));
+    var diemtb;
+    if(0<toan && 0<van && 0<anh && toan <10 && van <10 && anh<10){
+        diemtb=(2*toan + van + anh*2)/5;
+        if(diemtb<5){
+            alert(diemtb+ " truot");
+        }else if (5<=diemtb && diemtb <7.5){
+            alert(diemtb + " dat");
+        }else if (7.5<=diemtb && diemtb <8.5){
+            alert(diemtb+ " Kha");
+        }else{
+            alert(diemtb +" tot");
+        }
+    }else{
+        alert("nhap lai diem so.");
+    }
+</script>
+</body>
+</html>
